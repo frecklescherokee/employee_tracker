@@ -4,29 +4,26 @@ DROP TABLE IF EXISTS departments;
 
 
 CREATE TABLE employees (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INTEGER PRIMARY KEY,
     first_name varchar(50) NOT NULL,
     last_name varchar(50) NOT NULL,
     role_id INT NOT NULL,
     manager_id INT,
     CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE SET NULL,
     CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employees(id) ON DELETE SET NULL
-    PRIMARY KEY (id)
 );
 
 
 CREATE TABLE roles (
-  id INT NOT NULL AUTO_INCREMENT,
-  title varchar(30) NOT NULL,
+  id INTEGER PRIMARY KEY,
+  title varchar(50) NOT NULL,
   department_id INT,
   salary DECIMAL NOT NULL,
-  PRIMARY KEY (id),
   CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE SET NULL
 );
 
 
 CREATE TABLE departments (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(30) NOT NULL,
-    PRIMARY KEY (id)
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(50) NOT NULL
 );

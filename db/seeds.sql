@@ -1,12 +1,18 @@
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO employees (first_name, last_name, role_id)
 VALUES
 ("Michelle", "Teacup", 1),
-("Jesse", "Overstreet", 6, 1),
 ("Marcus", "Golfbag", 3),
-("Victor", "Anchovies", 7, 3),
-("Collin", "Cooper", 15, 6),
-("Michaela", "Lucey", 13, 2),
-("Paula", "Nest", 9, 6);
+("Marty", "Theory", 6);
+
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES
+("Jonah", "Neff", 14, 3),
+("Jesse", "Overstreet", 6, 1),
+("Ray", "Ching", 11, 2),
+("Victor", "Anchovies", 7, 2),
+("Collin", "Cooper", 15, 9),
+("Freckles", "Cherokee", 13, 5),
+("Paula", "Nest", 9, 9);
 
 
 INSERT INTO roles (title, department_id, salary)
@@ -27,7 +33,7 @@ VALUES
 ("Staff Engineer", 2, 140000),
 ("Equipment Technician", 2, 60000),
 ("Process Technician Technician", 2, 60000),
-("Specialist", 3, 45000)
+("Specialist", 3, 45000);
 
 INSERT INTO departments (name)
 VALUES 
