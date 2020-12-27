@@ -1,7 +1,8 @@
 // require mysql and console.table and inquirer
+const inquirer = require("inquirer");
 const mysql = require("mysql2");
 const cTable = require("console.table");
-const inquirer = require("inquirer");
+
 
 // make arrays to hold the various questions we need for this app
 const departmentsArray = [];
