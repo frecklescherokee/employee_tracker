@@ -1,0 +1,24 @@
+{
+  "name": "employee_tracker",
+  "version": "1.0.0",
+  "description": "program that allows you to track your employees, their roles, salaries, departments and managers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frecklescherokee/employee_tracker.git"
+  },
+  "author": "Mike Lewis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frecklescherokee/employee_tracker/issues"
+  },
+  "homepage": "https://github.com/frecklescherokee/employee_tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3",
+    "mysql2": "^2.2.5"
+  }
+}
